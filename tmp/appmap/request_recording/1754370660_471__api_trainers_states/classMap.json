@@ -1,0 +1,58 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "findAllDistinctStates",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/repository/TrainerRepository.java:-1"
+                      }
+                    ],
+                    "name": "TrainerRepository",
+                    "type": "class"
+                  }
+                ],
+                "name": "repository",
+                "type": "package"
+              }
+            ],
+            "name": "trainers_application",
+            "type": "package"
+          }
+        ],
+        "name": "cts",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /api/trainers/states"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select distinct t1_0.state from trainers t1_0 order by t1_0.state"
+      }
+    ]
+  }
+]

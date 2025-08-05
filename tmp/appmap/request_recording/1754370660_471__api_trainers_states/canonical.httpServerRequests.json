@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers/states",
+    "parameters": "()",
+    "status": 200
+  }
+]

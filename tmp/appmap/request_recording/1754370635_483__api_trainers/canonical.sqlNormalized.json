@@ -1,0 +1,6 @@
+[
+  "select c1_0.trainer_id,c1_0.certification from trainer_certifications c1_0 where c1_0.trainer_id=?",
+  "select count(t1_0.id) from trainers t1_0",
+  "select s1_0.trainer_id,s1_0.specialization from trainer_specializations s1_0 where s1_0.trainer_id=?",
+  "select t1_0.id,t1_0.additional_notes,t1_0.address,t1_0.application_status,t1_0.available_for_travel,t1_0.city,t1_0.country,t1_0.created_at,t1_0.date_of_birth,t1_0.email,t1_0.first_name,t1_0.highest_qualification,t1_0.last_name,t1_0.phone_number,t1_0.postal_code,t1_0.previous_company,t1_0.salary_expectation,t1_0.state,t1_0.updated_at,t1_0.years_of_experience from trainers t1_0 order by t1_0.id limit ?,?"
+]

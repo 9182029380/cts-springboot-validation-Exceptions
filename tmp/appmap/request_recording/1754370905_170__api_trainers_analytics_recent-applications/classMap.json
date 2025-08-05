@@ -1,0 +1,102 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "findRecentApplications",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/repository/TrainerRepository.java:-1"
+                      }
+                    ],
+                    "name": "TrainerRepository",
+                    "type": "class"
+                  }
+                ],
+                "name": "repository",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "getRecentApplications",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/controller/TrainerController.java:284"
+                      }
+                    ],
+                    "name": "TrainerController",
+                    "type": "class"
+                  }
+                ],
+                "name": "controller",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "handleGlobalException",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/exception/GlobalExceptionHandler.java:79"
+                      }
+                    ],
+                    "name": "GlobalExceptionHandler",
+                    "type": "class"
+                  }
+                ],
+                "name": "exception",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "getRecentApplications",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/service/TrainerService.java:189"
+                      }
+                    ],
+                    "name": "TrainerService",
+                    "type": "class"
+                  }
+                ],
+                "name": "service",
+                "type": "package"
+              }
+            ],
+            "name": "trainers_application",
+            "type": "package"
+          }
+        ],
+        "name": "cts",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /api/trainers/analytics/recent-applications"
+      }
+    ]
+  }
+]

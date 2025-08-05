@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers",
+    "parameters": "(page,size,sortBy,sortDir)",
+    "status": 200
+  }
+]

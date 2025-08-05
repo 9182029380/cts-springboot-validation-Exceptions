@@ -1,0 +1,5 @@
+[
+  "com/cts/trainers_application/controller/TrainerController",
+  "com/cts/trainers_application/repository/TrainerRepository",
+  "com/cts/trainers_application/service/TrainerService"
+]

@@ -1,0 +1,6 @@
+[
+  "com/cts/trainers_application/controller",
+  "com/cts/trainers_application/exception",
+  "com/cts/trainers_application/repository",
+  "com/cts/trainers_application/service"
+]

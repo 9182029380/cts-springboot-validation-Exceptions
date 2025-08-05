@@ -1,0 +1,48 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "handleValidationExceptions",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/exception/GlobalExceptionHandler.java:59"
+                      }
+                    ],
+                    "name": "GlobalExceptionHandler",
+                    "type": "class"
+                  }
+                ],
+                "name": "exception",
+                "type": "package"
+              }
+            ],
+            "name": "trainers_application",
+            "type": "package"
+          }
+        ],
+        "name": "cts",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /api/trainers"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers/search/available-for-travel",
+    "parameters": "()",
+    "status": 200
+  }
+]

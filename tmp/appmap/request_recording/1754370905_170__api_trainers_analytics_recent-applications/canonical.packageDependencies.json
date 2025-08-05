@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "com/cts/trainers_application/controller"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "com/cts/trainers_application/exception"
+  },
+  {
+    "caller": "com/cts/trainers_application/controller",
+    "callee": "com/cts/trainers_application/service"
+  },
+  {
+    "caller": "com/cts/trainers_application/service",
+    "callee": "com/cts/trainers_application/repository"
+  }
+]

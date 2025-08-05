@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers/search/by-specializations",
+    "parameters": "(specializations)",
+    "status": 200
+  }
+]

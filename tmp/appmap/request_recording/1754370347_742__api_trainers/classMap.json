@@ -1,0 +1,102 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "existsByEmail",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/repository/TrainerRepository.java:-1"
+                      }
+                    ],
+                    "name": "TrainerRepository",
+                    "type": "class"
+                  }
+                ],
+                "name": "repository",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "createTrainer",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/controller/TrainerController.java:33"
+                      }
+                    ],
+                    "name": "TrainerController",
+                    "type": "class"
+                  }
+                ],
+                "name": "controller",
+                "type": "package"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "createTrainer",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/cts/trainers_application/service/TrainerService.java:32"
+                      }
+                    ],
+                    "name": "TrainerService",
+                    "type": "class"
+                  }
+                ],
+                "name": "service",
+                "type": "package"
+              }
+            ],
+            "name": "trainers_application",
+            "type": "package"
+          }
+        ],
+        "name": "cts",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /api/trainers"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select t1_0.id from trainers t1_0 where t1_0.email=? limit ?"
+      },
+      {
+        "type": "query",
+        "name": "insert into trainers (additional_notes,address,application_status,available_for_travel,city,country,created_at,date_of_birth,email,first_name,highest_qualification,last_name,phone_number,postal_code,previous_company,salary_expectation,state,updated_at,years_of_experience) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+      },
+      {
+        "type": "query",
+        "name": "insert into trainer_specializations (trainer_id,specialization) values (?,?)"
+      }
+    ]
+  }
+]

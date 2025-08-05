@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers/analytics/experience-statistics",
+    "parameters": "()",
+    "status": 200
+  }
+]

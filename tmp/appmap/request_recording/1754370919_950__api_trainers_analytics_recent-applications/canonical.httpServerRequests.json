@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers/analytics/recent-applications",
+    "parameters": "(days)",
+    "status": 500
+  }
+]

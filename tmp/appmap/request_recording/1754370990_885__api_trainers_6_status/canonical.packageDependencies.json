@@ -1,0 +1,22 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "Database"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "com/cts/trainers_application/controller"
+  },
+  {
+    "caller": "com/cts/trainers_application/controller",
+    "callee": "Database"
+  },
+  {
+    "caller": "com/cts/trainers_application/controller",
+    "callee": "com/cts/trainers_application/service"
+  },
+  {
+    "caller": "com/cts/trainers_application/service",
+    "callee": "Database"
+  }
+]

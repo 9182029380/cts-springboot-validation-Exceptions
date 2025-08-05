@@ -1,0 +1,62 @@
+[
+  {
+    "class": "org.hibernate.query.QueryArgumentException",
+    "message": "Argument [2025-07-06] of type [java.time.LocalDate] did not match parameter type [java.time.LocalDateTime (n/a)]",
+    "stack": [
+      "QueryParameterBindingValidator.java:85",
+      "com/cts/trainers_application/controller/TrainerController.java:284"
+    ],
+    "location": "QueryParameterBindingValidator.java:85"
+  },
+  {
+    "class": "org.hibernate.query.QueryArgumentException",
+    "message": "Argument [2025-07-06] of type [java.time.LocalDate] did not match parameter type [java.time.LocalDateTime (n/a)]",
+    "stack": [
+      "QueryParameterBindingValidator.java:85",
+      "com/cts/trainers_application/repository/TrainerRepository.java:-1",
+      "com/cts/trainers_application/service/TrainerService.java:189",
+      "com/cts/trainers_application/controller/TrainerController.java:284"
+    ],
+    "location": "QueryParameterBindingValidator.java:85"
+  },
+  {
+    "class": "org.hibernate.query.QueryArgumentException",
+    "message": "Argument [2025-07-06] of type [java.time.LocalDate] did not match parameter type [java.time.LocalDateTime (n/a)]",
+    "stack": [
+      "QueryParameterBindingValidator.java:85",
+      "com/cts/trainers_application/service/TrainerService.java:189",
+      "com/cts/trainers_application/controller/TrainerController.java:284"
+    ],
+    "location": "QueryParameterBindingValidator.java:85"
+  },
+  {
+    "class": "org.springframework.dao.InvalidDataAccessApiUsageException",
+    "message": "Argument [2025-07-06] of type [java.time.LocalDate] did not match parameter type [java.time.LocalDateTime (n/a)]",
+    "stack": [
+      "EntityManagerFactoryUtils.java:371",
+      "com/cts/trainers_application/controller/TrainerController.java:284"
+    ],
+    "location": "EntityManagerFactoryUtils.java:371"
+  },
+  {
+    "class": "org.springframework.dao.InvalidDataAccessApiUsageException",
+    "message": "Argument [2025-07-06] of type [java.time.LocalDate] did not match parameter type [java.time.LocalDateTime (n/a)]",
+    "stack": [
+      "EntityManagerFactoryUtils.java:371",
+      "com/cts/trainers_application/repository/TrainerRepository.java:-1",
+      "com/cts/trainers_application/service/TrainerService.java:189",
+      "com/cts/trainers_application/controller/TrainerController.java:284"
+    ],
+    "location": "EntityManagerFactoryUtils.java:371"
+  },
+  {
+    "class": "org.springframework.dao.InvalidDataAccessApiUsageException",
+    "message": "Argument [2025-07-06] of type [java.time.LocalDate] did not match parameter type [java.time.LocalDateTime (n/a)]",
+    "stack": [
+      "EntityManagerFactoryUtils.java:371",
+      "com/cts/trainers_application/service/TrainerService.java:189",
+      "com/cts/trainers_application/controller/TrainerController.java:284"
+    ],
+    "location": "EntityManagerFactoryUtils.java:371"
+  }
+]

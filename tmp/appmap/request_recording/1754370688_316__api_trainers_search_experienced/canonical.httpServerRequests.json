@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers/search/experienced",
+    "parameters": "(minYears)",
+    "status": 200
+  }
+]

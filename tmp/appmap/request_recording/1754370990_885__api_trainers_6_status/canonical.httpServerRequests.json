@@ -1,0 +1,7 @@
+[
+  {
+    "route": "PATCH /api/trainers/{id}/status",
+    "parameters": "(status)",
+    "status": 200
+  }
+]

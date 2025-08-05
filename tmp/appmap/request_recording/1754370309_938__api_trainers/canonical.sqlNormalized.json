@@ -1,0 +1,6 @@
+[
+  "insert into trainer_certifications (trainer_id,certification) values (?,?)",
+  "insert into trainer_specializations (trainer_id,specialization) values (?,?)",
+  "insert into trainers (additional_notes,address,application_status,available_for_travel,city,country,created_at,date_of_birth,email,first_name,highest_qualification,last_name,phone_number,postal_code,previous_company,salary_expectation,state,updated_at,years_of_experience) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+  "select t1_0.id from trainers t1_0 where t1_0.email=? limit ?"
+]

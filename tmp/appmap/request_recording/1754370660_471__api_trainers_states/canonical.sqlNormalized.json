@@ -1,0 +1,3 @@
+[
+  "select distinct t1_0.state from trainers t1_0 order by t1_0.state"
+]

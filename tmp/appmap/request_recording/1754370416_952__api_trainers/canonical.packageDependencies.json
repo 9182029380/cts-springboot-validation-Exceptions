@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "com/cts/trainers_application/exception"
+  }
+]

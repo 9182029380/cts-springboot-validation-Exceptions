@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/trainers/search/by-salary-range",
+    "parameters": "(minSalary,maxSalary)",
+    "status": 200
+  }
+]

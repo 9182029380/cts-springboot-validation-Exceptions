@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "GET /api/trainers/cities",
+    "callee": "com/cts"
+  },
+  {
+    "caller": "com/cts",
+    "callee": "select distinct t1_0.city from trainers t1_0 order by t1_0.city"
+  }
+]

@@ -1,0 +1,5 @@
+language: "java"
+name: "trainers-application"
+appmap_dir: "tmp/appmap"
+packages:
+- path: "com.cts.trainers_application"
