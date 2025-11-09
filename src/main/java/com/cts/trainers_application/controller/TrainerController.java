@@ -358,4 +358,8 @@ public class TrainerController {
         public Map<String, Object> getMetadata() { return metadata; }
         public void setMetadata(Map<String, Object> metadata) { this.metadata = metadata; }
     }
+    @GetMapping("/greet")
+    public String greet() {
+        return "Hello, World!";
+    }
 }
