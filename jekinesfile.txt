@@ -1,0 +1,69 @@
+pipeline {
+    agent any
+
+    environment {
+        DOCKER_USERNAME = "sharath198"
+        DOCKER_PASSWORD = "#########"
+        IMAGE_NAME = "springboot1-mysql-app"
+        TAG = "latest"
+    }
+
+    stages {
+
+        stage('Checkout from GitHub') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/9182029380/cts-springboot-validation-Exceptions'
+            }
+        }
+
+        stage('Build Spring Boot App') {
+            steps {
+                bat 'mvn clean package -DskipTests'
+            }
+        }
+
+        stage('Docker Login') {
+            steps {
+                bat """
+                echo Logging in to Docker Hub...
+                echo %DOCKER_PASSWORD% | docker login -u %DOCKER_USERNAME% --password-stdin
+                """
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                bat """
+                docker build -t %DOCKER_USERNAME%/%IMAGE_NAME%:%TAG% .
+                """
+            }
+        }
+
+        stage('Push Docker Image to Docker Hub') {
+            steps {
+                bat """
+                docker push %DOCKER_USERNAME%/%IMAGE_NAME%:%TAG%
+                """
+            }
+        }
+
+        stage('Deploy Using Docker Compose') {
+            steps {
+                bat """
+                echo Stopping old containers...
+                docker compose down || echo No containers running
+
+                echo Starting new deployment...
+                docker compose up -d --build
+                """
+            }
+        }
+    }
+
+    post {
+        always {
+            bat 'docker logout'
+        }
+    }
+}
