@@ -3,7 +3,7 @@ spring:
     name: trainers-application
 
   datasource:
-    url: jdbc:mysql://localhost:3306/springboot
+    url: jdbc:mysql://mysql-container:3306/mydb
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -21,7 +21,7 @@ spring:
 
 
 server:
-  port: 9098
+  port: 9000
 
 logging:
   level:
